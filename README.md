@@ -1,2 +1,3 @@
-# Portfolio-
-This is a portfolio using  Sass 
+# Portfolio Using Sass
+-In this project , I have learned how to setup Sass .
+
