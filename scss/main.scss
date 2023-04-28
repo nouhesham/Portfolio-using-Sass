@@ -1,6 +1,8 @@
 @import "config";
 @import "home";
 @import "menu";
+@import "about";
+@import "project";
 body {
   background: $primary-color;
   color: #fff;
@@ -46,6 +48,10 @@ main {
     }
   }
 }
+.text-secondary {
+  color: $secondary-color;
+}
+
 footer {
   font-size: 1rem;
   position: fixed;

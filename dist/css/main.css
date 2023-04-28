@@ -9,12 +9,7 @@
   padding-top: 35vh;
   overflow: hidden;
   align-items: center;
-  background: linear-gradient(
-      to right,
-      rgba(170, 170, 170, 0.9),
-      rgba(180, 169, 169, 0.2)
-    ),
-    url(../img/model-1.jpg) center right;
+  background: linear-gradient(to right, rgba(169, 169, 169, 0.9), rgba(169, 169, 169, 0.3)), url(../img/model-1.jpg) center right;
   background-size: cover;
 }
 .home__name {
@@ -27,8 +22,7 @@
   font-weight: 700;
 }
 
-h2,
-h1 {
+h2, h1 {
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -88,6 +82,170 @@ hr {
   transform: rotate(720deg);
   background: transparent;
 }
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 25px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  opacity: 0.96;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: darkgrey;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0%);
+}
+.nav .menu-nav_item {
+  padding: 1rem;
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav_item.open {
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav_item.active > a {
+  color: orange;
+}
+.nav .menu-nav__link {
+  padding: 2rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: orange;
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 1s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 2s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 3s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 4s;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about__bio-image {
+  background: linear-gradient(to right, rgba(169, 169, 169, 0.3), rgba(169, 169, 169, 0.2)), url(../img/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.about h3 {
+  padding: 0 0.5rem;
+}
+.about h6 {
+  padding: 0.5rem;
+}
+.about p {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: black;
+  letter-spacing: 0.1em;
+  line-height: 1.5rem;
+}
+.about-bio {
+  width: 80%;
+  text-align: center;
+}
+.about-bio .text-secondary {
+  padding: 1rem;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid: gap 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  padding: 2rem;
+}
+.jobs__job {
+  padding: 1rem;
+  border-bottom: 2px solid orange;
+  margin: 1rem;
+  background: #767676;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 1rem;
+  transform: rotate(90deg) translate(-2rem, -3rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(169, 169, 169, 0.9), rgba(169, 169, 169, 0.3)), url(../img/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects__bio-image .text-secondary {
+  font-size: 2rem;
+}
+.projects-items {
+  width: 60vh;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects-item {
+  position: relative;
+  border-bottom: 5px solid orange;
+}
 
 body {
   background: darkgrey;
@@ -134,6 +292,10 @@ main .social-icons a:hover {
   color: orange;
 }
 
+.text-secondary {
+  color: orange;
+}
+
 footer {
   font-size: 1rem;
   position: fixed;
@@ -142,4 +304,4 @@ footer {
   text-align: right;
   padding: 1rem;
   color: white;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

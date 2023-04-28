@@ -1,0 +1,69 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.3),
+        rgba($primary-color, 0.2)
+      ),
+      url(../img/model-1.jpg) center top;
+
+    background-size: cover;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  h3 {
+    padding: 0 0.5rem;
+  }
+  h6 {
+    padding: 0.5rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    color: black;
+    letter-spacing: 0.1em;
+    line-height: 1.5rem;
+  }
+  &-bio {
+    width: 80%;
+    text-align: center;
+
+    .text-secondary {
+      padding: 1rem;
+    }
+  }
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid: gap 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  padding: 2rem;
+
+  &__job {
+    padding: 1rem;
+    border-bottom: 2px solid orange;
+    margin: 1rem;
+    background: darken($primary-color, 20%);
+  }
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 1rem;
+  transform: rotate(90deg) translate(-2rem, -3rem);
+}
