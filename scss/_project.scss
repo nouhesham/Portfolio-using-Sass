@@ -17,17 +17,69 @@
     justify-content: center;
     .text-secondary {
       font-size: 2rem;
+      margin-top: 3rem;
+      padding-bottom: 0;
     }
   }
   &-items {
-    width: 60vh;
-    margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+
+    width: 60vh;
+    margin: 2rem auto 0 auto;
+    // display: grid;
+    // grid-template-columns: 1fr;
   }
   &-item {
     position: relative;
     border-bottom: 5px solid $secondary-color;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      background-color: $secondary-color;
+      height: 100%;
+      @include transition-ease;
+    }
+    &:hover {
+      &::after {
+        top: 0;
+        opacity: 0.9;
+      }
+      .projects-item-btn {
+        opacity: 1;
+      }
+    }
+    &-btns {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+    }
+    &-btn {
+      opacity: 0;
+      margin: auto;
+      @include transition-ease;
+      &:hover {
+        color: black;
+      }
+    }
   }
 }

@@ -1,0 +1,52 @@
+.contact {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.7),
+      rgba($primary-color, 0.7)
+    ),
+    url(../img/model-1.jpg) center top;
+
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  &-email:hover {
+    a {
+      color: black;
+      @include transition-ease;
+    }
+  }
+
+  &-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  p {
+    padding: 0.5rem;
+  }
+}
+
+footer {
+  transform: none;
+}
+.social-icons {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  margin-top: 2rem;
+}
