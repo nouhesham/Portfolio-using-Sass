@@ -17,7 +17,7 @@
   letter-spacing: 0.2rem;
 }
 .home__name-last {
-  color: orange;
+  color: #a52a2a;
   padding-left: 0.2rem;
   font-weight: 700;
 }
@@ -44,7 +44,7 @@ hr {
   right: 1rem;
   top: 1rem;
   width: 20px;
-  color: orange;
+  color: #a52a2a;
   height: 20px;
   z-index: 1;
   cursor: pointer;
@@ -52,7 +52,7 @@ hr {
 }
 .menu-btn__burger {
   position: absolute;
-  color: aliceblue;
+  color: black;
   right: 0;
   top: 0.5rem;
   width: 25px;
@@ -127,7 +127,7 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav_item.active > a {
-  color: orange;
+  color: #a52a2a;
 }
 .nav .menu-nav__link {
   padding: 2rem 0;
@@ -138,7 +138,7 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
-  color: orange;
+  color: #a52a2a;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -246,7 +246,7 @@ footer {
 }
 .projects-item {
   position: relative;
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #a52a2a;
   overflow: hidden;
   cursor: pointer;
   display: flex;
@@ -263,7 +263,7 @@ footer {
   left: 0;
   opacity: 0;
   width: 100%;
-  background-color: orange;
+  background-color: #a52a2a;
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
@@ -426,11 +426,11 @@ main .social-icons a {
   font-size: 30px;
 }
 main .social-icons a:hover {
-  color: orange;
+  color: #a52a2a;
 }
 
 .text-secondary {
-  color: orange;
+  color: #a52a2a;
 }
 
 footer {
